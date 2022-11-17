@@ -1,12 +1,16 @@
 {
-    "name": "HTML Label Highlighter",
+    "name": "HTML Label Highlighter 1.2",
     "short_name": "Highlight Label",
     "version": "1.0.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
         "js": ["content.js"]
       }
-    ]
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "For Label Highlighter"
+    }
   }
